@@ -1,6 +1,10 @@
 %%%%%%%%%%%%%%% solo su un singolo canale ora settato sul verde
 
 
+
+%%%%%%%%%%%% STAI ATTENTO A COME HAI DEFINITO IL CALCOLO DELLA CORRELAZIONE
+%%%%%%%%%%%% LE SLIDE DELLA PROF NON UNSANO corr2 ma usano una formulina! verificala
+
 clear all; close all; clc;
 start_time = cputime;
 

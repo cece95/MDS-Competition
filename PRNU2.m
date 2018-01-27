@@ -27,7 +27,9 @@ for i=1:size(images)
                 red = img(:,:,1); % Red channel
                 green = img(:,:,2); % Green channel
                 blue = img(:,:,3); % Blue channel
-
+				% VERIFICA BENE COME CALCOLI IL PRNU DI OGNI CANALE
+				% PERCHE POTREBBE DARSI CHE QUEL ResidualBlue.*blue NON FACCIA
+				% CORRETTAMENTE IL SUO MESTIERE
                 DenoiseBlue=wiener2(blue(:,:),[5 5]);
                 ResidualBlue(:,:)=blue(:,:) - DenoiseBlue;
                 Blue=Blue+(((ResidualBlue).*blue)./(blue.*blue));
